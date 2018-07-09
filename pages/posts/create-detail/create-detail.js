@@ -16,7 +16,7 @@ Page({
   //邀请码提示
   onActivtyCodeMsgTap: function () {
     wx.showModal({
-      content: "可向开发者**获取验证码哦，扫码添加",
+      content: "可向开发者**获取邀请码哦，扫码添加",
       showCancel: false,
       confirmText: "好的"
     })

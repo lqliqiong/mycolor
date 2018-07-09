@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="line"></view>
+  <view class="title-date">
+    <text class="title">发起一个活动</text>
+  </view>
+  <view class="title-date">
+    <text class="title">遇见更多朋友</text>
+  </view>
+
+  <text class="detail">活动信息</text>
+
+  <!--表单信息-->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <scroll-view class='scr-view'>
+      <view class="input">
+        活动名称：
+        <input class="weui-input" name="activtyName" placeholder="填写活动名称" />
+      </view>
+      <view class="input">
+        活动时间：
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{activityDate}}" name="activityDate" start="{{activityDate}}" end="2020-12-31" bindchange="bindDateChange">
+            <view class="weui-input">{{activityDate}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="input">
+        活动地点：
+        <view class="weui-cell__bd">
+          <picker mode="region" value="{{activityAddress}}" name="activityAddress" bindchange="bindRegionChange">
+            <view class="weui-input">{{activityAddress[0]}}，{{activityAddress[1]}}，{{activityAddress[2]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="line">
+      </view>
+      <view class="input">
+        邀请码：
+        <input class="weui-input" name="activtyCode" placeholder="输入邀请码创建活动" />
+
+        <icon type="info" size="30" bindtap="onActivtyCodeMsgTap" />
+
+      </view>
+
+      <view class="btn-submit">
+        <button type="primary" formType="submit">创建</button>
+        <button type="default" bindtap="navigateBackTap">返回</button>
+      </view>
+    </scroll-view>
+  </form>
+
+
+</view>

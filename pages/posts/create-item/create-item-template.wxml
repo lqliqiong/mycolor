@@ -1,0 +1,12 @@
+<template name="createItem">
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-add-item" src="/images/icon/collection-anti.png"></image>
+      <text class="post-date">发起一个活动</text>
+
+      <view class="post-add-date">
+        <image class="post-right" src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

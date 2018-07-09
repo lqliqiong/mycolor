@@ -1,0 +1,18 @@
+.post-add-item {
+  height: 16px;
+  width: 16px;
+  margin-left: 8rpx;
+  vertical-align: middle;
+}
+
+.post-right {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}
+
+.post-add-date {
+  display: inline;
+  margin-left: 426rpx;
+}
